@@ -3,6 +3,7 @@
 namespace DridiHaythem\LaravelSweetAlert;
 
 use DridiHaythem\LaravelSweetAlert\Components\SweetAlertComponent;
+use DridiHaythem\LaravelSweetAlert\Facades\SweetAlertFacade;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -13,6 +14,9 @@ class SweetAlertProvider extends ServiceProvider
      */
     public function register(): void
     {
+        $this->app->bind('SweetAlert', function ($app) {
+            return new SweetAlert();
+        });
     }
 
     /**

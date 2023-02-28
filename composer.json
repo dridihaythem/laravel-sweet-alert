@@ -16,7 +16,10 @@
         "laravel": {
             "providers": [
                 "DridiHaythem\\LaravelSweetAlert\\SweetAlertProvider"
-            ]
+            ],
+            "aliases": {
+                "SweetAlert": "DridiHaythem\\LaravelSweetAlert\\Facades\\SweetAlert"
+            }
         }
     }
 }
