@@ -1,0 +1,22 @@
+{
+    "name": "dridihaythem/laravel-sweet-alert",
+    "autoload": {
+        "psr-4": {
+            "DridiHaythem\\LaravelSweetAlert\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Haythem Dridi",
+            "email": "haithemdridiweb@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DridiHaythem\\LaravelSweetAlert\\SweetAlertProvider"
+            ]
+        }
+    }
+}
