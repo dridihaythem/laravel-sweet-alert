@@ -89,3 +89,19 @@ class TestController extends Controller
  ..
  }
 ```
+
+# Methods
+
+| Method                                        | Description                                                    |
+| --------------------------------------------- | -------------------------------------------------------------- |
+| success()                                     | sweetalert2 built-in icon                                      |
+| warning()                                     | sweetalert2 built-in icon                                      |
+| error()                                       | sweetalert2 built-in icon                                      |
+| info()                                        | sweetalert2 built-in icon                                      |
+| setTitle(String $title)                       | Set the title of the popup                                     |
+| setText(String $title)                        | A Set a description for the popup.                             |
+| setFooter(String $title)                      | Set the footer of the popup. Can be either plain text or HTML. |
+| showCloseButton()                             |                                                                |
+| showCancelButton(Stringnull$cancelButtonText) |                                                                |
+| showConfirmButton(bool $bool)                 |                                                                |
+| show()                                        | **you must call this function in the end to show the alert**   |
