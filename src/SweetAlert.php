@@ -4,7 +4,6 @@ namespace DridiHaythem\LaravelSweetAlert;
 
 class SweetAlert
 {
-
     public $data = [];
 
     public function success()
@@ -59,6 +58,13 @@ class SweetAlert
     public function setButtons(array $buttons)
     {
         $this->data['buttons'] = $buttons;
+
+        return $this;
+    }
+
+    public function setFooter(String $footer)
+    {
+        $this->data['footer'] = $footer;
 
         return $this;
     }
