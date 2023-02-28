@@ -4,7 +4,9 @@ namespace DridiHaythem\LaravelSweetAlert;
 
 class SweetAlert
 {
-    public $data = [];
+    public $data = [
+        'showConfirmButton' => true,
+    ];
 
     public function success()
     {
@@ -83,6 +85,13 @@ class SweetAlert
         if ($cancelButtonText) {
             $this->data['cancelButtonText'] = $cancelButtonText;
         }
+
+        return $this;
+    }
+
+    public function showConfirmButton(bool $bool)
+    {
+        $this->data['showConfirmButton'] = $bool;
 
         return $this;
     }

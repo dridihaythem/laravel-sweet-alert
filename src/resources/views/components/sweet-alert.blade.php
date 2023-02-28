@@ -38,6 +38,10 @@
     @if(array_key_exists('cancelButtonText', session('sweet_alert')))
     cancelButtonText: `{!! session('sweet_alert')['cancelButtonText'] !!}`,
     @endif
+
+    @if(array_key_exists('showConfirmButton', session('sweet_alert')))
+    showConfirmButton: `{{ session('sweet_alert')['showConfirmButton'] }}`,
+    @endif
     
   });
   
