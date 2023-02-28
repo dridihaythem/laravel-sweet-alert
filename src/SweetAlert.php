@@ -69,6 +69,24 @@ class SweetAlert
         return $this;
     }
 
+    public function showCloseButton()
+    {
+        $this->data['showCloseButton'] = true;
+
+        return $this;
+    }
+
+    public function showCancelButton(String|null $cancelButtonText = null)
+    {
+        $this->data['showCancelButton'] = true;
+
+        if ($cancelButtonText) {
+            $this->data['cancelButtonText'] = $cancelButtonText;
+        }
+
+        return $this;
+    }
+
     public function show()
     {
         $this->data['show'] = true;

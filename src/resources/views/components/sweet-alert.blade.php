@@ -26,6 +26,19 @@
     @if(array_key_exists('footer', session('sweet_alert')))
     footer : `{!! session('sweet_alert')['footer'] !!}`,
     @endif
+
+    @if(array_key_exists('showCloseButton', session('sweet_alert')))
+    showCloseButton: {{ session('sweet_alert')['showCloseButton'] }},
+    @endif 
+
+    @if(array_key_exists('showCancelButton', session('sweet_alert')))
+    showCancelButton: {{ session('sweet_alert')['showCancelButton'] }},
+    @endif
+
+    @if(array_key_exists('cancelButtonText', session('sweet_alert')))
+    cancelButtonText: `{!! session('sweet_alert')['cancelButtonText'] !!}`,
+    @endif
+    
   });
   
 {{ Session::forget('sweet_alert') }}
